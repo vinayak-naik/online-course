@@ -3,6 +3,9 @@
     padding: 0;
     font-family: sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 #header{
     height: 100vh;
     background-image: url(images/background.png);
@@ -44,6 +47,9 @@ h1{
     border: 2px solid #f67c92 ;
     font-weight: bold;
     cursor: pointer;
+}
+.common-btn:hover{
+    background: #f67c92;
 }
 p{
     font-size: 15px;

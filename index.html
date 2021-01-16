@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>complete website design using HTML and CSS</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <section id="header">
-        <div class="container">
+        <div class="container" >
             <img src="images/logo.png" class="logo">
-            <div class="header-text">
+            <div class="header-text" data-aos="fade-up" data-aos-duration="2000">
                 <h1>Lorem ipsum dolor<br>Lorem ipsum dolor sit amet ipsum dolor</h1>
                 <span class="square"></span>
                 <p>Nulla delectus, eligendi velit, expedita voluptates natus voluptatem sapiente iste culpa est in
@@ -39,17 +39,17 @@
             <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
-    <img src="images/menu.png" id="menubtn">
+    <img data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000" src="images/menu.png" id="menubtn">
 
     <!-- -----------------------about-------------------------- -->
 
     <section id="about">
-        <div class="about-left-col">
+        <div class="about-left-col" data-aos="fade-up-right" data-aos-duration="1500" >
             <img src="images/about.png">
         </div>
 
 
-        <div class="about-right-col">
+        <div class="about-right-col" data-aos="fade-up-left" data-aos-duration="1500" >
             <div class="about-text">
                 <h1>About Us</h1>
                 <span class="square"></span>
@@ -73,18 +73,18 @@
     <section id="features">
 
         <div class="feature-row">
-            <div class="feature-col">
+            <div class="feature-col"  data-aos="zoom-in" data-aos-duration="1500">
                 <img src="images/pic-1.png">
                 <h4>Learn Anyware</h4>
                 <p>Switch between your computer, tablet or mobile device</p>
             </div>
-            <div class="feature-col">
-                <img src="images/pic-2.png">
+            <div class="feature-col" data-aos="zoom-in" data-aos-duration="1500">
+                <img src="images/pic-2.png" >
                 <h4>Expert Teachers</h4>
                 <p>Learn from industry experts who are fassionate about teaching</p>
             </div>
-            <div class="feature-col">
-                <img src="images/pic-3.png">
+            <div class="feature-col" data-aos="zoom-in" data-aos-duration="1500">
+                <img src="images/pic-3.png" >
                 <h4>Unlimited Access</h4>
                 <p>Choose what would like to learn from our extensive subscription library</p>
             </div>
@@ -105,7 +105,7 @@
 
     <section id="courses">
         <div class="container course-row">
-            <div class="course-left-col">
+            <div class="course-left-col" data-aos="flip-right" data-aos-duration="2500">
                 <div class="course-text">
                     <h1>browse our top <br> courses</h1>
                     <span class="square"></span>
@@ -120,7 +120,7 @@
                     </div>
                 </div>
             </div>
-            <div class="course-right-col">
+            <div class="course-right-col" data-aos="flip-left" data-aos-duration="2500">
                 <img src="images/course.png" alt="">
             </div>
 
@@ -130,12 +130,12 @@
     <!-- -------------------------Offer---------------------------- -->
 
     <section id="offer">
-        <div class="about-left-col">
+        <div class="about-left-col" data-aos="fade-right" data-aos-duration="1500">
             <img src="images/offer.png">
         </div>
 
 
-        <div class="about-right-col">
+        <div class="about-right-col" data-aos="fade-left" data-aos-duration="1500">
             <div class="about-text">
                 <h1>Limitless Learning, <br> Limitless Possibilities</h1>
                 <span class="square"></span>
@@ -156,7 +156,7 @@
     <!-- --------------------------Contact--------------------------- -->
     <section id="contact">
         <div class="container contact-row">
-            <div class="contact-left-col">
+            <div class="contact-left-col" data-aos="zoom-out" data-aos-duration="2500">
                 <h1>Sign Up to join our <br>learning community</h1>
                 <form>
                     <input type="text" placeholder="Enter Name">
@@ -174,7 +174,7 @@
                     <span class="line3"></span>
                 </div>
             </div>
-            <div class="contact-right-col">
+            <div class="contact-right-col" data-aos="zoom-out" data-aos-duration="2500">
                 <img src="images/contact.png">
             </div>
         </div>
@@ -182,7 +182,7 @@
     </section>
 
     <!-- -----------------------Footer-------------------------- -->
-    <section id="footer">
+    <section id="footer" data-aos="zoom-in" data-aos-duration="2500">
         <div class="container footer-row">
             <hr>
             <div class="footer-left-col">
@@ -228,7 +228,10 @@
 
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
     <script>
         var menubtn = document.getElementById("menubtn")
